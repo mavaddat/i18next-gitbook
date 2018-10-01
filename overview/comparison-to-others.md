@@ -49,7 +49,7 @@ True, i18next's documentation is bigger than that of other i18n frameworks - but
 
 If you do not need that i18next is as simple as any other i18n framework:
 
-```js
+```javascript
 import i18next from 'i18next';​
 
 i18next.init({
@@ -87,7 +87,7 @@ Just two samples of extended functionality you can get:
 
 translation.json
 
-```js
+```javascript
 {
     "error": {
         "unspecific": "Something went wrong.",
@@ -98,7 +98,7 @@ translation.json
 
 Sample
 
-```js
+```javascript
 const error = '404';
 i18next.t([`error.${error}`, 'error.unspecific']) // -> "The page was not found"​
 
@@ -114,7 +114,7 @@ i18next.t([`error.${error}`, 'error.unspecific']) // -> "Something went wrong"
 
 Just drop in the [interval-postprocessor](https://github.com/i18next/i18next-intervalPlural-postProcessor)​
 
-```js
+```javascript
 {
     key_interval: '(0){no goodies remaining...sorry you`re to late};(1-100){just a few goodies remaining...};(100-inf){many goodies still available};'
 }
